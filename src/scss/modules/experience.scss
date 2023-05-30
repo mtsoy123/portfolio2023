@@ -1,0 +1,43 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    &__header-container {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    &__header {
+        margin: 0;
+        @include font(normal, 800, 40px, 48px, $color-light);
+        white-space: nowrap;
+        animation: header 20s infinite linear;
+    }
+
+    &__header:after {
+        content: "experience experience experience experience experience experience";
+    }
+
+    @keyframes header {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    &__wrapper {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__job {
+        margin: 0;
+        list-style: none;
+    }
+}

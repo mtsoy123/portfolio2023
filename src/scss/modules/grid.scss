@@ -1,0 +1,43 @@
+.grid {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "portfolio portfolio skills get-in-touch"
+        "portfolio portfolio CV get-in-touch";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    &__cell {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__cell_type_portfolio {
+        grid-area: portfolio;
+    }
+
+    &__cell_type_cv {
+        grid-area: CV;
+    }
+
+    &__cell_type_get-in-touch {
+        grid-area: get-in-touch;
+    }
+
+    &__cell_type_skills {
+        grid-area: skills;
+    }
+
+    @media only screen and (max-width: 1212px) {
+        grid-template-areas:
+            "portfolio"
+            "skills"
+            "CV"
+            "get-in-touch";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}

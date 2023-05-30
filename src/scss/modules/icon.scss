@@ -1,0 +1,55 @@
+.icon {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &__key-skills {
+        width: 48px;
+        height: 48px;
+    }
+    &_type_html {
+        background-image: url(#{$icon-path}/html.svg);
+    }
+    &_type_css {
+        background-image: url(#{$icon-path}/css.svg);
+    }
+    &_type_sass {
+        background-image: url(#{$icon-path}/sass.svg);
+    }
+    &_type_javascript {
+        background-image: url(#{$icon-path}/javascript.svg);
+    }
+    &_type_typescript {
+        background-image: url(#{$icon-path}/typescript.svg);
+    }
+    &_type_react {
+        background-image: url(#{$icon-path}/react.svg);
+    }
+    &_type_redux {
+        background-image: url(#{$icon-path}/redux.svg);
+    }
+    &_type_mongodb {
+        background-image: url(#{$icon-path}/mongodb.svg);
+    }
+    &_type_node {
+        background-image: url(#{$icon-path}/node.svg);
+    }
+    &_type_express {
+        background-image: url(#{$icon-path}/express.svg);
+    }
+    &_type_git {
+        background-image: url(#{$icon-path}/git.svg);
+    }
+    &_type_webpack {
+        background-image: url(#{$icon-path}/webpack.svg);
+    }
+    &_type_figma {
+        background-image: url(#{$icon-path}/figma.svg);
+    }
+    &_type_english {
+        background-image: url(#{$icon-path}/english.svg);
+    }
+    &_type_russian {
+        background-image: url(#{$icon-path}/russian.svg);
+    }
+}

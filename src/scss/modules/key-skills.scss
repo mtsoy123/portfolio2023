@@ -1,0 +1,40 @@
+.key-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+
+    &__header {
+        margin: 0;
+        @include font(normal, 800, 67px, 80px, $color-light);
+    }
+
+    &__chip {
+        padding: 20px;
+        margin: 0;
+        border-radius: 50px;
+        width: fit-content;
+        height: fit-content;
+        @include font(normal, 400, 44px, 64px, $color-light);
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__chip_type_fe {
+        background-color: $color-blue;
+    }
+
+    &__chip_type_be {
+        background-color: $color-red;
+    }
+
+    &__chip_type_tools {
+        background-color: $color-green;
+    }
+
+    &__chip_type_soft {
+        background-color: $color-yellow;
+    }
+}

@@ -1,0 +1,201 @@
+.card {
+    border-radius: 20px;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    text-decoration: none;
+    margin: 0;
+    list-style-type: none;
+
+    &_type_blue {
+        background-color: $color-blue;
+    }
+
+    &_type_red {
+        background-color: $color-red;
+    }
+
+    &_type_light {
+        background-color: $color-light;
+    }
+
+    &_type_green {
+        background-color: $color-green;
+    }
+
+    &_type_gray {
+        background-color: $color-gray;
+    }
+
+    &_type_superle {
+        background-color: $color-superle;
+        border: 10px solid $color-superle-secondary;
+    }
+
+    &_type_grid {
+        height: 100%;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.7;
+            transition: opacity 0.3s ease-out;
+        }
+    }
+
+    &_type_naumen {
+        background-color: $color-naumen;
+    }
+
+    &_type_epam {
+        background-color: $color-epam;
+    }
+    &_type_crp {
+        background-color: $color-crp;
+    }
+
+    &_type_contacts {
+        gap: 32px;
+    }
+
+    &__header {
+        @include font(normal, 800, 61px, 145%, $color-light);
+        margin: 0;
+    }
+
+    &__header_type_dark {
+        @include font(normal, 800, 61px, 145%, $color-light);
+        color: $color-dark;
+    }
+
+    &__header_type_secondary {
+        color: $color-light;
+    }
+
+    &__icon {
+        @include font(normal, 800, 44px, 145%, $color-dark);
+        text-align: right;
+    }
+
+    &__subheader {
+        margin: 0 0 32px 0;
+        @include font(normal, 800, 22px, 26px, $color-light);
+    }
+
+    &__paragraph {
+        margin: 0;
+        @include font(normal, 400, 67px, 132.5%, $color-light);
+    }
+
+    &__button {
+        cursor: pointer;
+        padding: 20px;
+
+        &:hover {
+            opacity: 0.7;
+            transition: opacity 0.3s ease-out;
+        }
+    }
+
+    &__button_type_superle {
+        @include button($color-light, $color-superle-secondary);
+        border: 5px solid $color-superle-secondary;
+    }
+
+    &__button_type_blue {
+        @include button($color-blue, $color-light);
+    }
+
+    &__button_type_yellow {
+        @include button($color-yellow, $color-light);
+    }
+
+    &__button_type_red {
+        @include button($color-red, $color-light);
+    }
+
+    &__button_type_green {
+        @include button($color-green, $color-light);
+    }
+
+    &__button_type_naumen {
+        @include button($color-naumen, $color-light);
+    }
+
+    &__button_type_crp {
+        @include button($color-crp, $color-light);
+    }
+
+    &__button_type_epam {
+        @include button($color-epam, $color-light);
+    }
+    &_type_hidden {
+        display: none;
+    }
+
+    &__button_type_active {
+        @include button($color-light, $color-dark);
+    }
+
+    &__button-wrapper {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__sub-paragraph {
+        @include font(normal, 400, 32px, 145%, $color-light);
+    }
+
+    &__date {
+        margin: 0;
+        @include font(normal, 400, 32px, 145%, $color-light);
+    }
+
+    &__position {
+        margin: 0;
+        @include font(normal, 400, 56px, 145%, $color-light);
+    }
+
+    &__header-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        margin-bottom: 48px;
+    }
+
+    &__experience {
+        @include font(normal, 400, 44px, 145%, $color-dark);
+        margin-bottom: 24px;
+    }
+
+    &__experience-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__link {
+        @include font(normal, 700, 67px, 132.5%, $color-light);
+        text-decoration: underline;
+        &:hover {
+            color: $color-blue;
+            transition: color 0.3s ease-out;
+        }
+    }
+
+    &__contacts {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__link-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin: 0;
+        padding: 0;
+    }
+}

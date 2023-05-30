@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__photo {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+    }
+
+    &__title {
+        @include font(normal, 700, 79px, 95px, $color-light);
+        margin: 0;
+    }
+
+    &__subtitle {
+        @include font(normal, 400, 44px, 53px, $color-light);
+        margin: 0;
+    }
+}

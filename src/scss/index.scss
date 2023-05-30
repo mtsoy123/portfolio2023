@@ -1,0 +1,13 @@
+@import "./_normalize.css";
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+@import "./modules/body.scss";
+@import "./modules/header.scss";
+@import "./modules/grid.scss";
+@import "./modules/card.scss";
+@import "./modules/about-me.scss";
+@import "./modules/key-skills.scss";
+@import "./modules/portfolio.scss";
+@import "./modules/experience.scss";
+@import "./modules/icon.scss";
