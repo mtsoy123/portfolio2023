@@ -24,4 +24,8 @@
         @include font(normal, 400, 44px, 53px, $color-light);
         margin: 0;
     }
+
+    @media only screen and (max-width: 761px) {
+        flex-direction: column;
+    }
 }

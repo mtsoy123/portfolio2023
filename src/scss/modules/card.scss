@@ -198,4 +198,90 @@
         margin: 0;
         padding: 0;
     }
+
+    @media only screen and (max-width: 762px) {
+        &__experience-wrapper {
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        &__header {
+            font-size: 36px;
+            line-height: 145%;
+        }
+
+        &__date {
+            font-size: 20px;
+            line-height: 145%;
+        }
+
+        &__position {
+            font-size: 30px;
+            line-height: 145%;
+        }
+
+        &__paragraph {
+            font-size: 44px;
+            line-height: 132.5%;
+        }
+
+        &__experience {
+            font-size: 44px;
+            line-height: 132.5%;
+        }
+
+        &_type_about-me {
+            flex-direction: column;
+        }
+
+        &__link {
+            font-size: 50px;
+            line-height: 132.5%;
+        }
+
+        &__button {
+            padding: 12px;
+        }
+        &__button_type_superle {
+            font-size: 24px;
+            line-height: 35px;
+        }
+
+        &__button_type_blue {
+            font-size: 24px;
+            line-height: 35px;
+        }
+
+        &__button_type_yellow {
+            font-size: 24px;
+            line-height: 35px;
+        }
+
+        &__button_type_red {
+            font-size: 24px;
+            line-height: 35px;
+        }
+
+        &__button_type_green {
+            font-size: 24px;
+            line-height: 35px;
+        }
+
+        &__button_type_naumen {
+            font-size: 24px;
+            line-height: 35px;
+        }
+
+        &__button_type_crp {
+            font-size: 24px;
+            line-height: 35px;
+        }
+
+        &__button_type_epam {
+            font-size: 24px;
+            line-height: 35px;
+        }
+    }
 }
