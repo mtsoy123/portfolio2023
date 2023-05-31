@@ -3,7 +3,15 @@
     font-style: normal;
     font-weight: 800;
     font-display: swap;
-    src: url(Syne-ExtraBold.ttf) format("ttf");
+    src: url(../assets/fonts//Syne-ExtraBold.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Syne";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../assets/fonts/Syne-Bold.ttf) format("ttf");
 }
 
 @font-face {
@@ -11,13 +19,5 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(Syne-Regular.ttf) format("ttf");
-}
-
-@font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(Syne-Bold.ttf) format("ttf");
+    src: url(../assets/fonts/Syne-Regular.ttf) format("ttf");
 }
